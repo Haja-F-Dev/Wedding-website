@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  color: #000;
+  background-color: #f5f5f5;
+  font-size: 10px;
+}
+
+header {
+  height: 10vh;
+}
+
+.container {
+  padding: 1rem;
+  width: 100%;
+}
+
+.mx-width {
+  max-width: 160rem;
+  margin: 0 auto;
+}
+
+.navigation {
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navigation ul {
+  list-style: none;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 1.3rem;
+}
+
+.nav-title {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  font-family: "Cormorant", cursive;
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+  letter-spacing: -0.1rem;
+  margin-left: -10rem;
+  cursor: pointer;
+  transition: font-size 0.4s ease;
+}
+
+.nav-title:hover {
+  font-size: 4.2rem;
+}
+
+nav ul:hover li a {
+  opacity: 0.5;
+}
+
+nav ul li a {
+  font-family: "Cormorant", cursive;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 0.22rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+nav ul li a:hover {
+  opacity: 1;
+}
+
+.rsvp {
+  border: 1px solid #333;
+  padding: 0.8rem 1.6rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.rsvp:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Section Hero */
+.hero {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 1.2rem;
+  padding: 6rem 1rem;
+  margin-bottom: 2rem;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+.hero-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-1 video {
+  width: 100%;
+  height: 82%;
+  object-fit: cover;
+}
+
+.hero .hero-2 {
+  font-family: "Great Vibes", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  gap: 1rem;
+}
+
+.hero .hero-2 p {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.hero .hero-2 .hero-title {
+  font-size: 6rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  color: #d6c3d1;
+}
+
+.hero .hero-2 .hero-text {
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: #000;
+  letter-spacing: 0.2rem;
+  opacity: 0.8;
+}
+
+.hero .hero-2 blockquote p {
+  font-family: "Cormorant", serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+}
+
+.hero .hero-2 .rsvp {
+  font-family: "Cormorant", serif;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #000;
+  padding: 1rem 4rem;
+  border-radius: 3px;
+  margin-top: 3rem;
+}
+
+.hero .hero-2 .rsvp:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+/* COUNTDOWN + SAVE THE DATE  */
+.save-the-date {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(img/countdown-img.avif);
+  background-position: center 36%;
+  width: 100%;
+  padding: 6rem 2rem 10rem 2rem;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.save-the-date h2 {
+  font-size: 6.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-family: "Great Vibes", cursive;
+  grid-column: 1 / -1;
+  justify-self: center;
+  align-self: start;
+  color: #fff;
+  letter-spacing: 1.8rem;
+}
+
+.save-the-date-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  gap: 3rem;
+}
+
+.save-the-date-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 3rem;
+}
+
+.svd-icon {
+  width: 2.4rem;
+  height: 5rem;
+  color: #fff;
+}
+
+.save-the-date-1 .save-the-date-location,
+.save-the-date-1 .save-the-date-date {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 0 0 3rem;
+}
+
+.svd-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.svd-info .svd-lieu {
+  font-size: 1.6rem;
+  font-weight: 100;
+  letter-spacing: 0.3rem;
+  font-family: "Great Vibes", cursive;
+}
+
+.svd-info .svd-adress {
+  font-size: 1.4rem;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+  font-family: sans-serif;
+}
+
+/* Countdown */
+#countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "Cormorant", cursive;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  border: #fff 1px solid;
+  background: #f4f9f6;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 30px 35px,
+    rgba(255, 255, 255, 0.1) 0px -8px 20px, rgba(255, 255, 255, 0.1) 0px 2px 4px,
+    rgba(255, 255, 255, 0.15) 0px 6px 8px,
+    rgba(255, 255, 255, 0.07) 0px -2px 3px;
+}
+
+.countdown-item .countdown-number {
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: "Great Vibes", cursive;
+}
+
+/* Section Hébergement */
+.hebergement {
+  /* height: 84vh; */
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.hebergement-part {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hebergement-part-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 2rem;
+  width: 100%;
+}
+
+.hebergement-part-center .hebergement-img {
+  display: block;
+  width: 90%;
+  height: 30rem;
+}
+
+.hebergement-part-center h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 5rem;
+  font-weight: 400;
+  position: absolute;
+  top: -8%;
+  z-index: 1;
+  letter-spacing: 1rem;
+}
+
+.hebergement-part-center a.hebergement-link {
+  text-decoration: none;
+  /* margin-top: 2rem; */
+  border: #000 solid 1px;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-family: "Cormorant", cursive;
+  color: #f5f5f5;
+  background-color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.hebergement-part-center a.hebergement-link:hover {
+  background-color: #2e2e2e;
+}
+
+.img-hebergemennt {
+  width: 100%;
+  height: 28rem;
+  /* object-fit: cover; */
+  background: url(img/hebergement.jpeg) center no-repeat;
+}
+
+/* Section Podcast */
+.podcast {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 8rem;
+  background-color: #fff;
+}
+
+.podcast .podcast-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #2e4a2a;
+  letter-spacing: 1.8rem;
+  align-self: flex-start;
+  letter-spacing: 0.6rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 1rem;
+}
+
+.podcast-icon {
+  width: 4rem;
+  height: 4rem;
+  color: #2e4a2a;
+}
+
+.podcast .podcast-title a {
+  text-decoration: none;
+  color: #2e4a2a;
+}
+
+.podcast-carousel {
+  width: 100%;
+  padding: 1rem;
+  background-color: aqua;
+}
+
+/* Carousel */
+
+
+footer {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social-media a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
