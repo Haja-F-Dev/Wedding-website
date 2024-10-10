@@ -39,6 +39,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-bottom: 5rem;
 }
 
 .navigation ul {
@@ -58,6 +59,7 @@ header {
   font-family: "Cormorant", cursive;
   text-transform: uppercase;
   font-size: 4rem;
+  margin-top: 3rem;
   margin-bottom: 10px;
   font-weight: 400;
   letter-spacing: -0.1rem;
@@ -102,12 +104,13 @@ nav ul li a:hover {
 /* Section Hero */
 .hero {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 7fr 4fr;
   gap: 1.2rem;
-  padding: 6rem 1rem;
+  padding: 8rem 1rem;
   margin-bottom: 2rem;
   max-width: 110rem;
   margin: 0 auto;
+  margin-top: 4rem;
 }
 
 .hero-1 {
@@ -118,39 +121,37 @@ nav ul li a:hover {
 
 .hero-1 video {
   width: 100%;
-  height: 82%;
+  height: 100%;
   object-fit: cover;
 }
 
-.hero .hero-2 {
-  font-family: "Great Vibes", cursive;
+div.hero-2 {
+  font-family: "Cormorant", cursive;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3rem;
+  padding: 2rem;
   gap: 1rem;
 }
 
 .hero .hero-2 p {
-  font-size: 2rem;
-  font-weight: 300;
   text-align: center;
 }
 
 .hero .hero-2 .hero-title {
-  font-size: 6rem;
+  font-size: 4.8rem;
   margin-bottom: 10px;
   font-weight: 400;
   letter-spacing: 0.2rem;
-  color: #d6c3d1;
 }
 
 .hero .hero-2 .hero-text {
-  font-size: 2.2rem;
+  font-size: 1.4rem;
   font-weight: 300;
-  color: #000;
+  color: #222;
   letter-spacing: 0.2rem;
+  font-family: sans-serif;
   opacity: 0.8;
 }
 
@@ -169,12 +170,15 @@ nav ul li a:hover {
   color: #000;
   padding: 1rem 4rem;
   border-radius: 3px;
-  margin-top: 3rem;
 }
 
 .hero .hero-2 .rsvp:hover {
   color: #fff;
   background-color: #333;
+}
+
+.parole {
+  font-family: "Great Vibes", cursive;
 }
 
 /* COUNTDOWN + SAVE THE DATE  */
@@ -188,6 +192,7 @@ nav ul li a:hover {
   width: 100%;
   padding: 6rem 2rem 10rem 2rem;
   display: grid;
+  row-gap: 3rem;
   grid-template-columns: 2fr 3fr;
   justify-items: center;
   align-items: center;
@@ -198,6 +203,7 @@ nav ul li a:hover {
   font-weight: 400;
   margin-bottom: 1rem;
   font-family: "Great Vibes", cursive;
+  font-family: "Cormorant", cursive;
   grid-column: 1 / -1;
   justify-self: center;
   align-self: start;
@@ -228,34 +234,51 @@ nav ul li a:hover {
   color: #fff;
 }
 
+.svd-icon-2 {
+  width: 3.6rem;
+  height: 5rem;
+}
+
 .save-the-date-1 .save-the-date-location,
 .save-the-date-1 .save-the-date-date {
   width: 90%;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 0 0 0 3rem;
+  /* gap: 1rem; */
+  padding: 0 0 0 2rem;
 }
 
 .svd-info {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+
 }
 
 .svd-info .svd-lieu {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 100;
   letter-spacing: 0.3rem;
-  font-family: "Great Vibes", cursive;
+  font-family: "Cormorant", cursive;
+  margin-left: 3rem;
+  opacity: 0.6;
 }
 
 .svd-info .svd-adress {
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 100;
   letter-spacing: 0.2rem;
   font-family: sans-serif;
+  margin: 0;
 }
+
+.svd-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  /* padding: 3rem; */
+}
+
 
 /* Countdown */
 #countdown {
@@ -323,8 +346,8 @@ nav ul li a:hover {
 }
 
 .hebergement-part-center h2 {
-  font-family: "Great Vibes", cursive;
-  font-size: 5rem;
+  font-family: "Cormorant", cursive;
+  font-size: 4.2rem;
   font-weight: 400;
   position: absolute;
   top: -8%;
@@ -366,11 +389,11 @@ nav ul li a:hover {
 }
 
 .podcast .podcast-title {
-  font-family: "Great Vibes", cursive;
+  font-family: "Cormorant", cursive;
   font-size: 5rem;
   font-weight: 400;
   margin-bottom: 1rem;
-  color: #2e4a2a;
+  color: #222;
   letter-spacing: 1.8rem;
   align-self: flex-start;
   letter-spacing: 0.6rem;
@@ -383,12 +406,12 @@ nav ul li a:hover {
 .podcast-icon {
   width: 4rem;
   height: 4rem;
-  color: #2e4a2a;
+  color: #222;
 }
 
 .podcast .podcast-title a {
   text-decoration: none;
-  color: #2e4a2a;
+  color: #222;
 }
 
 .podcast-carousel {
