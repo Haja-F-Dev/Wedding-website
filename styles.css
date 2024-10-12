@@ -29,7 +29,7 @@ header {
 }
 
 .mx-width {
-  max-width: 160rem;
+  max-width: 140rem;
   margin: 0 auto;
 }
 
@@ -58,7 +58,7 @@ header {
   text-align: center;
   font-family: "Cormorant", cursive;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-top: 3rem;
   margin-bottom: 10px;
   font-weight: 400;
@@ -140,7 +140,8 @@ div.hero-2 {
   text-align: center;
 }
 
-.hero .hero-2 .hero-title {
+.hero-title {
+  font-family: "Cormorant", cursive;
   font-size: 4.8rem;
   margin-bottom: 10px;
   font-weight: 400;
@@ -203,7 +204,6 @@ div.hero-2 {
   font-size: 6.2rem;
   font-weight: 400;
   margin-bottom: 1rem;
-  font-family: "Great Vibes", cursive;
   font-family: "Cormorant", cursive;
   grid-column: 1 / -1;
   justify-self: center;
@@ -336,6 +336,7 @@ div.hero-2 {
   position: relative;
   gap: 2rem;
   width: 100%;
+
 }
 
 .hebergement-part-center .hebergement-img {
@@ -375,6 +376,10 @@ div.hero-2 {
   height: 28rem;
   /* object-fit: cover; */
   background: url(img/hebergement.jpeg) center no-repeat;
+}
+
+.hebergement-txt {
+  font-size: 1.1rem;
 }
 
 /* Section Podcast */
@@ -443,6 +448,7 @@ div.hero-2 {
 
 /* SECTION FAQ */
 .faq {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -458,13 +464,14 @@ div.hero-2 {
 }
 
 .accordion {
-  width: 75%;
+  width: 80%;
 }
 
 .accordion-button:not(.collapsed) {
   color: #fff;
   background-color: #222;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+  opacity: 0.8;
 }
 
 .accordion-button,
@@ -484,7 +491,6 @@ div.hero-2 {
 }
 
 footer {
-  background-color: #fff;
   padding: 3rem;
   text-align: center;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
@@ -502,6 +508,7 @@ footer {
     opacity: 0.6;
     border-bottom: #fff 1px solid;
     width: 12%;
+    text-align: center;
   }
 
   p {

@@ -28,4 +28,3 @@ const countdownFunction = setInterval(() => {
   }
 }, 1000);
 
-

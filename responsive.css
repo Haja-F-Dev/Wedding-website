@@ -1,141 +1,188 @@
-/* Ajout de styles responsives */
-@media (max-width: 1200px) {
+/* Desktop */
+@media (max-width: 1440px) {
+  /* Navbar */
   .navigation {
-    padding: 1rem;
+    position: relative;
   }
 
   .nav-title {
-    font-size: 3rem;
-    margin-left: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
   }
 
+  .nav-title:hover {
+    font-size: 2rem;
+    color: #000;
+  }
+
+  /* Hero */
   .hero {
-    padding: 4rem 1rem;
     grid-template-columns: 1fr;
   }
 
-  .hero .hero-2 {
-    padding: 2rem;
+  div.hero-2 {
+    padding: 4rem;
   }
 
-  .hero .hero-2 .hero-title {
-    font-size: 4rem;
-  }
-
-  .hero .hero-2 p {
-    font-size: 1.5rem;
-  }
-
+  /* Save the date - Countdown */
   .save-the-date {
-    grid-template-columns: 1fr;
-    padding: 4rem 2rem;
-  }
+    grid-template-columns: 3fr 2fr;
 
-  .save-the-date-1,
-  .save-the-date-2 {
-    gap: 2rem;
+    h2 {
+      font-size: 4.8rem;
+    }
   }
 
   #countdown {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    font-size: 9px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .nav-left,
-  .nav-right {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navigation {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-title {
-    font-size: 3rem;
-  }
-
-  .hero {
-    padding: 3rem 1rem;
-    grid-template-columns: 1fr;
-  }
-
-  .hero-1 video {
-    height: auto; /* Ajustement pour la vidéo */
-  }
-
-  .hero .hero-2 .hero-title {
-    font-size: 3rem;
-  }
-
-  .hero .hero-2 p {
-    font-size: 1.3rem;
-  }
-
-  .save-the-date h2 {
-    font-size: 4rem;
-  }
-
-  .hebergement-part {
-    grid-template-columns: 1fr; /* Une seule colonne sur mobile */
-    margin-top: 2rem;
-  }
-
-  .hebergement-part-center h2 {
-    font-size: 4rem;
-  }
-
-  footer {
-    padding: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    font-size: 8px;
-  }
-
-  .nav-left,
-  .nav-right {
-    gap: 0.5rem;
-  }
-
-  .nav-title {
-    font-size: 2.5rem;
-  }
-
-  .hero .hero-2 .hero-title {
-    font-size: 2.5rem;
-  }
-
-  .hero .hero-2 p {
-    font-size: 1.2rem;
-  }
-
-  .save-the-date h2 {
-    font-size: 3rem;
-  }
-
-  .save-the-date-1 .save-the-date-location,
-  .save-the-date-1 .save-the-date-date {
-    padding: 0 1rem;
+  .svd-info .svd-adress {
+    font-size: 1.6rem;
   }
 
   .countdown-item {
     padding: 1rem;
+
+    .countdown-number {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+/* Petit écran */
+@media (max-width: 1024px) {
+  .save-the-date {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    h2 {
+      font-size: 4rem;
+      text-align: center;
+    }
+  }
+  .save-the-date-2 {
+    margin-top: 4rem;
   }
 
-  .countdown-item .countdown-number {
-    font-size: 3rem;
+  .podcast {
+
+    padding: 0;
+
+    .podcast-title {
+      font-size: 3rem;
+      margin-left: 2rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
   }
 
-  footer {
+  .faq {
+    gap: 2rem;
+    .accordion {
+      width: 100%;
+    }
+    h2 {
+      font-size: 3.6rem;
+
+      button {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .accordion-body {
+    font-size: 1.4rem;
+  }
+}
+
+/* Tablette */
+@media (max-width: 768px) {
+  .navigation {
+    justify-content: center;
+  }
+  .nav-title {
+    display: none;
+  }
+
+  .hero {
+    margin-top: 1rem;
+  }
+  .hero-title {
+    font-size: 5rem;
+  }
+
+  .hero .hero-2 .hero-text {
+    font-size: 1.4rem;
+  }
+
+  .parole {
+    font-size: 2rem;
+  }
+
+  .rsvp {
+    width: 100%;
+    text-align: center;
+  }
+
+  .save-the-date {
+    h2 {
+      font-size: 3.6rem;
+    }
+  }
+
+  .svd-info .svd-lieu {
+    font-size: 1.4rem;
+  }
+
+  .svd-info .svd-adress {
+    font-size: 1.2rem;
+  }
+
+  #countdown {
+    gap: 1rem;
+  }
+
+  .countdown-item {
+    padding: 1.4rem;
+
+    .countdown-number {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  .hebergement-part {
+    grid-template-columns: 1fr;
+  }
+
+  .hebergement-part-center h2 {
+    font-size: 3.3rem;
+  }
+
+  .hebergement-txt {
+    display: none;
+  }
+
+
+  /* FAQ */
+
+  .faq {
+    padding: 1rem;
+    gap: 0.2rem;
+  }
+  
+  .accordion-body {
     font-size: 1rem;
   }
+
 }
