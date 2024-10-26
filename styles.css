@@ -70,7 +70,7 @@ header {
 
 .nav-title:hover {
   font-size: 4.6rem;
-  color: #000;
+  /* color: #000; */
 }
 
 nav ul:hover li a {
@@ -89,6 +89,7 @@ nav ul li a {
 
 nav ul li a:hover {
   opacity: 1;
+  color: #111;
 }
 
 .rsvp {
